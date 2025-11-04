@@ -85,7 +85,6 @@ ee.Initialize(
         token_uri=creds['token_uri']
     )
 )
->>>>>>> a86d83d (Use Earth Engine credentials from Render secret)
 
 # Optional: load saved model for land-health scoring (if present)
 MODEL_PATH = "model_xgb.pkl"
