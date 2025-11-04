@@ -9,10 +9,9 @@ import plotly.express as px
 import joblib
 import datetime
 from folium.plugins import Draw
-<<<<<<< HEAD
-=======
+
 import json
->>>>>>> a86d83d (Use Earth Engine credentials from Render secret)
+
 
 # Clear ALL cache at the very beginning
 st.cache_data.clear()
@@ -70,7 +69,7 @@ if not ee_ok:
     st.error("❌ Earth Engine init failed: " + str(ee_err))
     st.info("Run `earthengine authenticate` locally and ensure your account has permission or remove project arg in ee.Initialize().")
     st.stop()
-=======
+
 # ----------------------------
 # Initialize Earth Engine securely (Render)
 # ----------------------------
