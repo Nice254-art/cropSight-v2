@@ -44,7 +44,6 @@ st.sidebar.markdown("**Version:** 2.0 | **Deployed:** New")
 
 
 
-<<<<<<< HEAD
 # -------------------------
 # Initialization
 # -------------------------
