@@ -38,22 +38,7 @@ if not ee_ok:
     st.info("Run `earthengine authenticate` locally and ensure your account has permission or remove project arg in ee.Initialize().")
     st.stop()
 
-# ----------------------------
-# Initialize Earth Engine securely (Render)
-# ----------------------------
-CREDENTIALS_PATH = '/etc/secrets/credentials'
 
-with open(CREDENTIALS_PATH) as f:
-    creds = json.load(f)
-
-ee.Initialize(
-    credentials=ee.OAuthCredentials(
-        client_id=creds['client_id'],
-        client_secret=creds['client_secret'],
-        refresh_token=creds['refresh_token'],
-        token_uri=creds['token_uri']
-    )
-)
 
 # Optional: load saved model for land-health scoring (if present)
 MODEL_PATH = "model_xgb.pkl"
