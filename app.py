@@ -13,37 +13,6 @@ from folium.plugins import Draw
 import json
 
 
-# Clear ALL cache at the very beginning
-st.cache_data.clear()
-st.cache_resource.clear()
-
-st.set_page_config(
-    page_title="ReGenVision — AI Land Health & Erosion Assessment",  # Changed title
-    page_icon="🌍",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
-
-# Add version tracking
-st.sidebar.markdown("**Version:** 2.0 | **Deployed:** New")
-
-# Clear ALL cache at the very beginning
-st.cache_data.clear()
-st.cache_resource.clear()
-
-st.set_page_config(
-    page_title="ReGenVision — AI Land Health & Erosion Assessment",  # Changed title
-    page_icon="🌍",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
-
-# Add version tracking
-st.sidebar.markdown("**Version:** 2.0 | **Deployed:** New")
-
-
-
-
 # -------------------------
 # Initialization
 # -------------------------
